@@ -27,20 +27,21 @@ const Layout = ({ children, location }) => {
               title
               author
               description
-              image
             }
           }
         }
       `}
       render={data => (
         <>
-          <Helmet title={data.site.siteMetadata.title}>
+          <Helmet
+            title={data.site.siteMetadata.title}
+            link={[{ rel: 'shortcut icon', href: '/logo.ico' }]}
+          >
             <meta name="author" content={data.site.siteMetadata.author} />
             <meta
               name="description"
               content={data.site.siteMetadata.description}
             />
-            <meta name="image" content={data.site.siteMetadata.image} />
           </Helmet>
           {content}
         </>
