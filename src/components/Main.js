@@ -112,6 +112,27 @@ const MainWrapper = styled.div`
   .url {
     text-decoration: underline;
     cursor: pointer;
+    /* word-break: break-all; */
+  }
+
+  @media (max-width: 576px) {
+    .exp-polidea,
+    .exp-kms,
+    .open-source,
+    .talk,
+    .side-project {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .polidea-img,
+    .kms-img,
+    .open-source-img,
+    .talk-img,
+    .side-project-img {
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
   }
 `;
 
