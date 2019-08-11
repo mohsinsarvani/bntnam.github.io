@@ -22,7 +22,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js' '**/*.css' '**/*.scss'",
+    "format": "prettier --write '**/*.js'",
     "deploy:github": "npm run build && node ./scripts/deploy-github"
   },
   "husky": {

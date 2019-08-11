@@ -36,10 +36,7 @@ const Layout = ({ children, location }) => {
         <>
           <Helmet title={data.site.siteMetadata.title}>
             <meta name="author" content={data.site.siteMetadata.author} />
-            <meta
-              name="description"
-              content={data.site.siteMetadata.description}
-            />
+            <meta name="description" content={data.site.siteMetadata.description} />
             <meta name="image" content={data.site.siteMetadata.image} />
           </Helmet>
           {content}
