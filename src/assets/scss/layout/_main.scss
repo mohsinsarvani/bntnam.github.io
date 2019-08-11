@@ -1,0 +1,112 @@
+///
+/// Dimension by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Main */
+
+	#main {
+		@include vendor('flex-grow', '1');
+		@include vendor('flex-shrink', '1');
+		@include vendor('display', 'flex');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'center');
+		@include vendor('flex-direction', 'column');
+		position: relative;
+		max-width: 100%;
+		z-index: 3;
+		display: none;
+
+		article {
+			@include vendor('transform', 'translateY(0.25rem)');
+			@include vendor('transition', (
+				'opacity #{_duration(article)} ease-in-out',
+				'transform #{_duration(article)} ease-in-out'
+			));
+			@include padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
+			position: relative;
+			width: 40rem;
+			max-width: 100%;
+			// background-color: transparentize(_palette(bg), 0.15);
+			background-color: transparentize(#fff, 0.3);
+			border-radius: _size(border-radius);
+			opacity: 0;
+
+			&.timeout {
+				display: none;
+			}
+
+			&.active.timeout {
+				@include vendor('transform', 'translateY(0)');
+				opacity: 1;
+			}
+
+			&.active {
+				display: block !important;
+			}
+
+			.close {
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 4rem;
+				height: 4rem;
+				cursor: pointer;
+				text-indent: 4rem;
+				overflow: hidden;
+				white-space: nowrap;
+
+				&:before {
+					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0.75rem;
+					left: 0.75rem;
+					width: 2.5rem;
+					height: 2.5rem;
+					border-radius: 100%;
+					background-position: center;
+					background-image: svg-url('<svg width="20" version="1.1" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64"><g><path fill="#1D1D1B" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/></g></svg>');
+					background-size: 20px 20px;
+					background-repeat: no-repeat;
+				}
+
+				&:hover {
+					&:before {
+						background-color: _palette(border-bg);
+					}
+				}
+
+				&:active {
+					&:before {
+						background-color: _palette(border-bg-alt);
+					}
+				}
+			}
+
+		}
+
+		@include breakpoint(small) {
+			article {
+				@include padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
+				.close {
+					&:before {
+						top: 0.875rem;
+						left: 0.875rem;
+						width: 2.25rem;
+						height: 2.25rem;
+						background-size: 14px 14px;
+					}
+				}
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			article {
+				@include padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
+			}
+		}
+	}
