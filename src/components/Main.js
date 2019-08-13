@@ -101,6 +101,7 @@ const MainWrapper = styled.div`
 
   .email {
     color: #f19066;
+    font-size: 1.2rem;
     border-bottom: none;
   }
 
@@ -112,6 +113,7 @@ const MainWrapper = styled.div`
   .url {
     text-decoration: underline;
     cursor: pointer;
+    border-bottom: none;
     /* word-break: break-all; */
   }
 
@@ -176,7 +178,7 @@ class Main extends React.Component {
           </p>
           <div className="button-wrapper">
             <a
-              href="./NamBui-CV.pdf"
+              href="./files/NamBui-CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="icon fa-download download-button"
