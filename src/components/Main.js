@@ -206,16 +206,19 @@ class Main extends React.Component {
             <p>
               <h3>Junior Software Engineer</h3>
               <h5>4/2019 - Present at Polidea - Warsaw, Poland </h5>
-              <h4>Project: Backoffice 2.0</h4>
+              <h4>Project: Utilo</h4>
+              <ul>
+                <li>Description: Utilo landing website.</li>
+                <li>
+                  Technologies: ReactJS, GatsbyJS, NodeJS, styled-components,
+                  HTML, CSS
+                </li>
+              </ul>
+              <h4>Project: OutOfOffice</h4>
               <ul>
                 <li>
                   Description: Analyze and share a web UI of out-of-office hours
                   report to employees.
-                </li>
-                <li>
-                  Responsibilities: Mainly responsible for the project from
-                  end-to-end. Implement server side rendering application by
-                  using NextJS and give a hand on designing API endpoints.
                 </li>
                 <li>
                   Technologies: ReactJS, NextJS, NodeJS, styled-components,
@@ -224,15 +227,7 @@ class Main extends React.Component {
               </ul>
               <h4>Project: Rebranding</h4>
               <ul>
-                <li>
-                  Description: Remake the site of the company according to
-                  rebranding purpose.
-                </li>
-                <li>
-                  Responsibilities: Develop and maintain Polidea website by
-                  using static site generator GatsbyJS and the frontend
-                  ecosystem.
-                </li>
+                <li>Description: Polidea landing website.</li>
                 <li>
                   Technologies: ReactJS, GatsbyJS, styled-components, GraphQL,
                   Strapi CMS, HTML, CSS.
@@ -253,10 +248,6 @@ class Main extends React.Component {
                   Description: Combine and share your entire test execution
                   history, results, log, screenshots and videos with all of your
                   automation agents for better teamwork transparency.
-                </li>
-                <li>
-                  Responsibilities: Develop and maintain front and back-end.
-                  Implement automation testing for UI and APIs.
                 </li>
                 <li>
                   Technologies: ReactJS, Spring, Hibernate, SASS, HTML, CSS.
