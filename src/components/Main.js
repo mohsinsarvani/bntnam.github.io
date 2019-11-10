@@ -33,6 +33,7 @@ const MainWrapper = styled.div`
 
   h4 {
     font-size: 1rem;
+    margin: 0;
   }
 
   h5 {
@@ -100,13 +101,12 @@ const MainWrapper = styled.div`
   }
 
   .email {
-    color: #f19066;
+    color: #e15f41;
     font-size: 1.2rem;
     border-bottom: none;
   }
 
   .email:hover {
-    color: #e15f41;
     text-decoration: underline;
   }
 
@@ -208,7 +208,10 @@ class Main extends React.Component {
               <h5>4/2019 - Present at Polidea - Warsaw, Poland </h5>
               <h4>Project: Utilo</h4>
               <ul>
-                <li>Description: Utilo landing website.</li>
+                <li>
+                  Description: Utilo landing website built with static site
+                  generator GatsbyJS.
+                </li>
                 <li>
                   Technologies: ReactJS, GatsbyJS, NodeJS, styled-components,
                   HTML, CSS
@@ -227,7 +230,10 @@ class Main extends React.Component {
               </ul>
               <h4>Project: Rebranding</h4>
               <ul>
-                <li>Description: Polidea landing website.</li>
+                <li>
+                  Description: Polidea landing website built with static site
+                  generator GatsbyJS.
+                </li>
                 <li>
                   Technologies: ReactJS, GatsbyJS, styled-components, GraphQL,
                   Strapi CMS, HTML, CSS.
@@ -366,7 +372,7 @@ class Main extends React.Component {
                   Technologies: ReactJS, Redux, Firebase, Semantic UI, HTML, CSS
                 </li>
               </ul>
-              <h4>Ecommerce Bookstore</h4>
+              {/* <h4>Ecommerce Bookstore</h4>
               <ul>
                 <li>
                   An end-to-end e-commerce web app development building by Java.
@@ -387,7 +393,7 @@ class Main extends React.Component {
                   Technologies: Java, Spring, Hibernate/JPA, MySQL, Thymleaf,
                   Bootstrap, HTML, CSS.
                 </li>
-              </ul>
+              </ul> */}
               <h4>Real Estate Connector</h4>
               <ul>
                 <li>
