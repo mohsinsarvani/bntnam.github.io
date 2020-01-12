@@ -33,7 +33,6 @@ const MainWrapper = styled.div`
 
   h4 {
     font-size: 1rem;
-    margin: 0;
   }
 
   h5 {
@@ -204,41 +203,14 @@ class Main extends React.Component {
               <img src={polideaImg} className="polidea-img" alt="" />
             </span>
             <p>
-              <h3>Junior Software Engineer</h3>
-              <h5>4/2019 - Present at Polidea - Warsaw, Poland </h5>
-              <h4>Project: Utilo</h4>
-              <ul>
-                <li>
-                  Description: Utilo landing website built with static site
-                  generator GatsbyJS.
-                </li>
-                <li>
-                  Technologies: ReactJS, GatsbyJS, NodeJS, styled-components,
-                  HTML, CSS
-                </li>
-              </ul>
-              <h4>Project: OutOfOffice</h4>
-              <ul>
-                <li>
-                  Description: Analyze and share a web UI of out-of-office hours
-                  report to employees.
-                </li>
-                <li>
-                  Technologies: ReactJS, NextJS, NodeJS, styled-components,
-                  Semantic UI, HTML, CSS
-                </li>
-              </ul>
-              <h4>Project: Rebranding</h4>
-              <ul>
-                <li>
-                  Description: Polidea landing website built with static site
-                  generator GatsbyJS.
-                </li>
-                <li>
-                  Technologies: ReactJS, GatsbyJS, styled-components, GraphQL,
-                  Strapi CMS, HTML, CSS.
-                </li>
-              </ul>
+              <h3>Software Engineer</h3>
+              <h4>4/2019 - Present at Polidea - Warsaw, Poland</h4>
+              Polidea delivers digital solutions that empower people and
+              businesses. Together, we create intuitive digital interfaces,
+              enabling smooth interactions between people and technology. We are
+              here to translate your idea into a perfectly crafted mobile
+              application, mixed reality experience, Internet of Things solution
+              or the whole digital ecosystem.
             </p>
           </div>
           <div className="exp-kms">
@@ -247,18 +219,12 @@ class Main extends React.Component {
             </span>
             <p>
               <h3>Software Intern</h3>
-              <h5>6/2018 - 10/2018 at KMS Technology - Vietnam</h5>
-              <h4>Project: Katalon Analytics</h4>
-              <ul>
-                <li>
-                  Description: Combine and share your entire test execution
-                  history, results, log, screenshots and videos with all of your
-                  automation agents for better teamwork transparency.
-                </li>
-                <li>
-                  Technologies: ReactJS, Spring, Hibernate, SASS, HTML, CSS.
-                </li>
-              </ul>
+              <h4>6/2018 - 10/2018 at KMS Technology - Vietnam</h4>
+              KMS Technology is a US-based product engineering and services
+              company with development and testing centers in Vietnam. We work
+              primarily with software companies to accelerate the delivery of
+              innovative software solutions and make offshore outsourcing easier
+              and more effective.
             </p>
           </div>
           {close}
