@@ -7,7 +7,6 @@
 /* BG */
 
 #bg {
-  @include vendor('transform', 'scale(1.0)');
   -webkit-backface-visibility: hidden;
   position: fixed;
   top: 0;
@@ -46,7 +45,6 @@
   }
 
   &:after {
-    @include vendor('transform', 'scale(1.125)');
     @include vendor(
       'transition',
       (
@@ -63,7 +61,6 @@
 
   .body.is-article-visible & {
     &:after {
-      @include vendor('transform', 'scale(1.0825)');
       @include vendor('filter', 'blur(0.2rem)');
     }
   }
