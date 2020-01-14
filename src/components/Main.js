@@ -171,7 +171,7 @@ class Main extends React.Component {
             Hi! My name is Nam Bui. I am on my way to be a better software
             developer than I was yesterday. Moreover, I am a person who has a
             huge passion for IT development. Learning new knowledge and
-            technologies is what I am passionate about, I also love to work in a
+            technologies is what I am passionate about. I also love to work in a
             group with my teammates, and sharing knowledge with each other is
             the way I can improve myself day by day.
           </p>
