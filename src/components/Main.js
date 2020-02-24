@@ -299,7 +299,8 @@ class Main extends React.Component {
               <ul>
                 <li>Katalon monitoring & analytics application</li>
                 <li>
-                  Technology: ReactJS, Semantic UI, React Bootstrap, HTML, CSS
+                  Technology: Spring, Hibernate, ReactJS, SASS, Semantic UI,
+                  React Bootstrap, HTML, CSS
                 </li>
               </ul>
               <h4>OutOfOffice (Internal)</h4>
