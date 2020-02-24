@@ -25,6 +25,8 @@ const MainWrapper = styled.div`
     color: #222f3e;
     text-transform: none;
     letter-spacing: 0.1rem;
+    margin: 0;
+    line-height: 2;
   }
 
   h3 {
@@ -37,6 +39,10 @@ const MainWrapper = styled.div`
 
   h5 {
     font-size: 0.8rem;
+  }
+
+  ul {
+    margin: 0 0 0.5rem 0;
   }
 
   .profile-img {
@@ -168,12 +174,13 @@ class Main extends React.Component {
           </span>
           <p />
           <p>
-            Hi! My name is Nam Bui. I am on my way to be a better software
-            developer than I was yesterday. Moreover, I am a person who has a
-            huge passion for IT development. Learning new knowledge and
-            technologies is what I am passionate about. I also love to work in a
-            group with my teammates, and sharing knowledge with each other is
-            the way I can improve myself day by day.
+            I am a Front-End Software Engineer with professional experience
+            building the responsive web design and progressive web application.
+            I specialize in JavaScript and its ecosystems such as React, Gatsby,
+            Next, and Node with hands-on experience of handling Universal
+            Javascript, Client Side Rendering and Server Side Rendering
+            applications. I also have experience with Java and Python. Moreover,
+            learning new technologies is what I am passionate about.
           </p>
           <div className="button-wrapper">
             <a
@@ -239,28 +246,76 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contribution</h2>
-          <div className="open-source">
+          <div className="side-project">
             <span className="main">
-              <img src={openSourceImg} className="open-source-img" alt="" />
+              <img src={sideProjectImg} className="side-project-img" alt="" />
             </span>
             <p>
-              <h5>I am a contributor at:</h5>
-              <h4>Strapi</h4>
+              <h5>I have joined in several commercial projects:</h5>
+              <h4>
+                <a
+                  className="url"
+                  href="https://utilodesign.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Utilo
+                </a>
+              </h4>
               <ul>
+                <li>Utilo landing website</li>
                 <li>
-                  The most advanced open-source Headless-CMS to build powerful
-                  APIs with no effort.
+                  Technology: GatsbyJS, ReactJS, NodeJS, Styled Components,
+                  Styled Systems, Storybook, HTML, CSS
                 </li>
+              </ul>
+              <h4>
+                <a
+                  className="url"
+                  href="https://www.polidea.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Polidea
+                </a>
+              </h4>
+              <ul>
+                <li>Polidea blog posts & landing pages</li>
                 <li>
-                  Solved an issue and enhance documentation:{' '}
-                  <a
-                    className="url"
-                    href="https://github.com/strapi/strapi/pull/3609"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://github.com/strapi/strapi/pull/3609
-                  </a>
+                  Technology: GatsbyJS, ReactJS, NodeJS, Storybook, Styled
+                  Components, Styled Systems, HTML, CSS
+                </li>
+              </ul>
+              <h4>
+                <a
+                  className="url"
+                  href="https://analytics.katalon.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Katalon
+                </a>
+              </h4>
+              <ul>
+                <li>Katalon monitoring & analytics application</li>
+                <li>
+                  Technology: ReactJS, Semantic UI, React Bootstrap, HTML, CSS
+                </li>
+              </ul>
+              <h4>OutOfOffice (Internal)</h4>
+              <ul>
+                <li>The time reporting application</li>
+                <li>
+                  Technology: NextJS, ReactJS, Semantic UI, Styled Component,
+                  HTML, CSS
+                </li>
+              </ul>
+              <h4>VoD (Internal)</h4>
+              <ul>
+                <li>The Video on Demand application</li>
+                <li>
+                  Technology: ReactJS, Redux, Firebase, Semantic UI, Styled
+                  Component, HTML, CSS
                 </li>
               </ul>
             </p>
@@ -291,96 +346,28 @@ class Main extends React.Component {
               </ul>
             </p>
           </div>
-          <div className="side-project">
+          <div className="open-source">
             <span className="main">
-              <img src={sideProjectImg} className="side-project-img" alt="" />
+              <img src={openSourceImg} className="open-source-img" alt="" />
             </span>
             <p>
-              <h5>I have done side projects in various stacks:</h5>
-              <h4>Devbook</h4>
+              <h5>I am a contributor at:</h5>
+              <h4>Strapi</h4>
               <ul>
                 <li>
-                  A social network for developers using MERN stack web app.
+                  The most advanced open-source Headless-CMS to build powerful
+                  APIs with no effort.
                 </li>
                 <li>
-                  Description and source code:{' '}
+                  Solved an issue and enhance documentation:{' '}
                   <a
                     className="url"
-                    href="https://github.com/bntnam/devbook"
+                    href="https://github.com/strapi/strapi/pull/3609"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://github.com/bntnam/devbook
+                    https://github.com/strapi/strapi/pull/3609
                   </a>
-                  .
-                </li>
-                <li>
-                  Technologies: NodeJS, ExpressJS, ReactJS, Redux, MongoDB,
-                  Bootstrap, HTML, CSS.
-                </li>
-              </ul>
-              <h4>Dev Chat App</h4>
-              <ul>
-                <li>A React Slack clone chat app for developers</li>
-                <li>
-                  Description and source code:{' '}
-                  <a
-                    className="url"
-                    href="https://github.com/bntnam/dev-chat"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://github.com/bntnam/dev-chat
-                  </a>
-                  .
-                </li>
-                <li>
-                  Technologies: ReactJS, Redux, Firebase, Semantic UI, HTML, CSS
-                </li>
-              </ul>
-              {/* <h4>Ecommerce Bookstore</h4>
-              <ul>
-                <li>
-                  An end-to-end e-commerce web app development building by Java.
-                </li>
-                <li>
-                  Description and source code:{' '}
-                  <a
-                    className="url"
-                    href="https://github.com/bntnam/bntn-ecommerce-bookstore"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://github.com/bntnam/bntn-ecommerce-bookstore
-                  </a>
-                  .
-                </li>
-                <li>
-                  Technologies: Java, Spring, Hibernate/JPA, MySQL, Thymleaf,
-                  Bootstrap, HTML, CSS.
-                </li>
-              </ul> */}
-              <h4>Real Estate Connector</h4>
-              <ul>
-                <li>
-                  A full-stack Python-Django web app which helps users to
-                  connect with realtors in term of buying real estate.
-                </li>
-                <li>
-                  Description and source code:{' '}
-                  <a
-                    className="url"
-                    href="https://github.com/bntnam/real-estate-connector"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://github.com/bntnam/real-estate-connector
-                  </a>
-                  .
-                </li>
-                <li>
-                  Technologies: Python, Django, PostgreSQL, Bootstrap, HTML,
-                  CSS.
                 </li>
               </ul>
             </p>
